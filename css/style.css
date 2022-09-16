@@ -120,6 +120,8 @@ body {
 }
 .card p {
   font-size: 1.6rem;
+}
+.card-body-text, .card-body-info-days-text, .card-footer-text {
   color: var(--soft-blue);
 }
 .card-footer {

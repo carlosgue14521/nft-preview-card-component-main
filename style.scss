@@ -122,6 +122,11 @@ body {
 
     p {
         font-size: 1.6rem;
+    }
+
+    &-body-text,
+    &-body-info-days-text,
+    &-footer-text {
         color: var(--soft-blue);
     }
 
