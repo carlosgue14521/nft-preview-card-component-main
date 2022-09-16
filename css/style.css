@@ -8,6 +8,12 @@
   --white: hsl(0, 0%, 100%);
 }
 
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
 *,
 *::before,
 *::after {
@@ -32,7 +38,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .card {
@@ -40,9 +46,8 @@ body {
   max-width: 315px;
   -webkit-box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.75);
-  padding: 20px;
+  padding: 2rem;
   border-radius: 15px;
-  margin: 2rem 1rem;
 }
 .card-header {
   border-radius: 12px;
@@ -74,18 +79,15 @@ body {
   display: block;
 }
 .card-body-title {
-  font-size: 21px;
+  font-size: 2.1rem;
   color: var(--white);
   font-weight: 600;
-  margin: 20px 0;
+  margin: 2rem 0;
   display: inline-block;
 }
 .card-body-title:hover {
   color: var(--cyan);
   cursor: pointer;
-}
-.card-body-text {
-  color: var(--soft-blue);
 }
 .card-body-info {
   display: -webkit-box;
@@ -97,7 +99,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 25px 0;
+  padding: 2.5rem 0;
   border-bottom: 1px solid var(--very-dark-blue);
 }
 .card-body-info-eth, .card-body-info-days {
@@ -111,10 +113,13 @@ body {
 .card-body-info-eth-text {
   color: var(--cyan);
   font-weight: 600;
-  padding-left: 7px;
+  padding-left: 0.7rem;
 }
 .card-body-info-days-text {
-  padding-left: 7px;
+  padding-left: 0.7rem;
+}
+.card p {
+  font-size: 1.6rem;
   color: var(--soft-blue);
 }
 .card-footer {
@@ -124,17 +129,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 15px;
+  padding-top: 1.5rem;
 }
 .card-footer-avatar {
   width: 13%;
   border: 2px solid var(--white);
   border-radius: 50%;
-  margin-right: 15px;
-}
-.card-footer p {
-  color: var(--soft-blue);
-  font-size: 16px;
+  margin-right: 1.5rem;
 }
 .card-footer-name {
   color: var(--white);
